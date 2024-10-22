@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="../13.1_Ejercicios/13.1_EjercicioValidacionXSD.xsd">
+    <nombre>Biblioteca nacional de Erjie</nombre>
+    <seccion>
+        <libro>
+            <titulo>El padre de valorant</titulo>
+            <autor>Erjie</autor>
+            <resumen>El prota recorre un largo camino para encontrarse con su padre</resumen>
+            <editorial>
+                <codigo>LJASD41</codigo>
+                <nombre>Santillana</nombre>
+                <ciudad>MiCasa</ciudad>
+            </editorial>
+        </libro>
+        <libro>
+            <titulo>HombresYMujeres</titulo>
+            <autor>DonJuanDelValle</autor>
+            <anio>3646</anio>
+            <resumen>Descripción de la sociedad entre hombres y mujeres desde la vista de un Don Juan</resumen>
+            <editorial>
+                <nombre>MS</nombre>
+                <ciudad>Barcelona</ciudad>
+            </editorial>
+        </libro>
+    </seccion>
+    <seccion></seccion>
+</biblioteca>

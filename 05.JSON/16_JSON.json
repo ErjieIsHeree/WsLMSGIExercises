@@ -1,0 +1,77 @@
+{"Videojuego":{
+    "Nombre_Juego": "League of Legends",
+    "Fecha_Creación": "01.01.2024",
+    "Nota": -5,
+    "Programadores":[
+        {
+            "Programador":{
+                "id": "92381740",
+                "Nombre_Programador": "Félix",
+                "Apellidos": "Pablo Lobo",
+                "DNI": "90483798A",
+                "Fecha_Nacimiento":{
+                    "Día":"01",
+                    "Mes":"04",
+                    "Año":"2003"
+                },
+                "Dirección_Programador":{
+                    "Tipo_Vía_Programador": "Calle",
+                    "Nombre_Vía_Programador": "Félix",
+                    "CP_Programador": "32145",
+                    "País_Programador": "China"
+                }
+            }
+        },
+        {
+            "Programador":{
+                "id": "34534525",
+                "Nombre_Programador": "Anthony",
+                "Apellidos": "Guanga Cristian",
+                "DNI": "587345938B",
+                "Fecha_Nacimiento":{
+                    "Día":"05",
+                    "Mes":"06",
+                    "Año":"2003"
+                },
+                "Dirección_Programador":{
+                    "Tipo_Vía_Programador": "Calle",
+                    "Nombre_Vía_Programador": "Anthony",
+                    "CP_Programador": "54321",
+                    "País_Programador": "Argelia"
+                }
+            }
+        },
+        {
+            "Programador":{
+                "id": "945872340",
+                "Nombre_Programador": "Felipe",
+                "Apellidos": "El Fiestas",
+                "DNI": "No tiene, sin papeles",
+                "Fecha_Nacimiento":{
+                    "Día":"08",
+                    "Mes":"09",
+                    "Año":"2003"
+                },
+                "Dirección_Programador":{
+                    "Tipo_Vía_Programador": "Avenida",
+                    "Nombre_Vía_Programador": "Felipe",
+                    "CP_Programador": "12345",
+                    "País_Programador": "Sudán"
+                }
+            }
+        }
+    ],
+    "Compañía":{
+        "id":"49875203",
+        "Nombre_Compañía": "Riot",
+        "NIF": "1347528734",
+        "Dirección_Compañía":{
+            "Tipo_Vía_Compañía": "Calle",
+            "Nombre_Vía_Compañía": "Underson",
+            "CP_Compañía": "36463",
+            "País_Compañía": "Asmérica"
+        }
+    },
+    "Página_Asociada": "https://www.riotgames.es"
+  }
+ }

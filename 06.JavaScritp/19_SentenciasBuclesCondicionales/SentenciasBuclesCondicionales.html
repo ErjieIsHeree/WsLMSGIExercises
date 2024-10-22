@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SentenciasBuclesCondicionales</title>
+    <script type="text/javascript" src="SentenciasBuclesCondicionales.js"></script>
+    <link rel="stylesheet" href="SentenciasBuclesCondicionales.css">
+</head>
+<body>
+    <h1>SentenciasBuclesCondicionales</h1>
+    <hr/>
+    <div class="mid">
+        <!--Contador de pares-->
+        <div class="contadorPares">
+            <br/>
+            <div class="contenido">
+                <h3>Contador de Pares</h3>
+            </div>
+            <br/>
+            <div class="contenido">
+                <label>
+                    Introduce un n&uacute;mero:
+                    <input type="text" id="contadorPares">
+                </label>
+                <br/>
+                <label>
+                    Hay
+                    <input type="text" id="pares">
+                    n&uacute;meros pares
+                </label>
+            </div>
+            <br/>
+            <br/>
+            <button onclick="contarPares()">Contar</button>
+            <br/>
+            <br/>
+        </div>
+        <hr/>
+        <!--Conversor de temperatura-->
+        <div class="conversorTemperatura">
+            <br>
+            <div class="contenido">
+                <h3>Conversor de temperatura</h3>
+            </div>
+            <br/>
+            <br/>
+            <div class="contenido">
+                <select name="dirConver" id="djfakl">
+                    <option value="aFahrenheit">Celsius a Fahrenheit</option>
+                    <option value="aCelsius">Fahrenheit a 
+                        Celsius</option>
+                </select>
+                <br/>
+                <label>
+                    Introduce la temperatura a convertir:
+                    <input type="text" id="temperaturaAConvertir">
+                </label>
+                <br/>
+                <label>
+                    Temperatura convertida
+                    <input type="text" id="temperaturaConvertida">
+                </label>
+            </div>
+            <br/>
+            <br/>
+            <button onclick="conversorTemperatura()">Convertir</button>
+            <br/>
+            <br/>
+        </div>
+        <hr/>
+        <!--Adivina el numero-->
+        <div class="adivinaElNumero">
+            <br>
+            <div class="contenido">
+                <h3>Adivina el numero</h3>
+            </div>
+            <br/>
+            <br/>
+            <div class="contenido">
+                <label>
+                    Introduce tu n&uacute;mero
+                    <input type="text" id="numeroUser">
+                </label>
+                <br/>
+                <label>
+                    El n&uacute;mero
+                    <input type="text" id="pista" class="big">
+                </label>
+            </div>
+            <br/>
+            <br/>
+            <button onclick="adivinadorDeNumero()">Adivinar</button>
+            <br/>
+            <br/>
+        </div>
+        <hr/>
+        <!--Cambiar el color de la pantalla-->
+        <div id="colorJS" class="cambiarColorPantalla">
+            <br>
+            <div class="contenido">
+                <h3>Cambiar el color de la pantalla</h3>
+            </div>
+            <br/>
+            <br/>
+            <div class="contenido">
+                <label>
+                    Introduce un color con formato hexadecimal
+                    <input type="text" id="color" value="#FFFFFF">
+                </label>
+            </div>
+            <br/>
+            <br/>
+            <button onclick="cambiarColorJS()">Cambiar color</button>
+            <br/>
+            <br/>
+            
+        </div>
+        <hr/>
+        <!--Usuario y contrasenia-->
+        <div>
+            <br>
+            <div class="contenido">
+                <h3>Usuario y contrase&ntilde;a</h3>
+            </div>
+            <br/>
+            <br/>
+            <div class="contenido">
+                <label>
+                    Nombre
+                    <input type="text" id="nombre">
+                </label>
+                <br/>
+                <label>
+                    Contrase&ntilde;a
+                    <input type="text" id="contra">
+                </label>
+            </div>
+            <br/>
+            <br/>
+            <button onclick="acceder()">Acceder</button>
+            <br/>
+            <br/>
+        </div>
+        <hr/>
+        <!--Generador de secuencia Fibonacci-->
+        <div class="secFibona">
+            <br>
+            <div class="contenido">
+                <h3>Generador de secuencia Fibonacci</h3>
+            </div>
+            <br/>
+            <br/>
+            <div class="contenido">
+                <label>
+                    Introduce cuantos términos de fibonacci 
+                    quieres ver
+                    <input type="text" id="sePide">
+                </label>
+                <br/>
+                <label>
+                    Secuencia Fibonacci
+                    <input type="text" id="resultadoFibonacci"
+                    class="big">
+                </label>
+            </div>
+            <br/>
+            <br/>
+            <button onclick="generarFibonacci()">Generar</button>
+            <br/>
+            <br/>
+        </div>
+        <hr/>
+    </div>
+</body>
+</html>

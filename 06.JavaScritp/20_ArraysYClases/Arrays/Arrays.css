@@ -1,0 +1,45 @@
+
+h2{
+    display: inline-block;
+    margin-top: 0;
+    background-color: white;
+}
+
+hr{
+    margin: 0;
+}
+
+label{
+    background-color: white;
+}
+
+div{
+    margin: 0;
+    border-color: blue;
+    text-align: center;
+}
+
+div.fondoPromedio{
+    padding: 1em;
+    background-image: url(img/unMedio.png) ;
+    background-size: 3em;
+    background-position: center;
+}
+
+div.fondoME{
+    padding: 1em;
+    background-image: url(img/mayor.png);
+    background-size: 3em;
+    background-position: center;
+}
+
+div.fondoPoI{
+    padding: 1em;
+    background-image: url(img/0\ 1.png);
+    background-size: 3em;
+    background-position: center;
+}
+
+body{
+    margin: 0;
+}

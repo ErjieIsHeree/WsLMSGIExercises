@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+    <annotation>
+        <documentation>
+            cabe destacar que este ejercicio esta continuado por el xsd del
+            ejercicio anterior (actividad 13.4)
+        </documentation>
+    </annotation>
+    <element name="empresa">
+        <complexType>
+            <sequence>
+                <element name="nombre">
+                    <simpleType>
+                        <restriction base="string">
+                            <minLength value="3"/>
+                            <maxLength value="15"/>
+                        </restriction>
+                    </simpleType>
+                </element>
+                <element name="capitalSocial">
+                    <complexType>
+                        <attribute name="moneda">
+                            <simpleType>
+                                <restriction base="string">
+                                    <enumeration value="euros"/>
+                                    <enumeration value="dolares"/>
+                                    <enumeration value="yenes"/>
+                                </restriction>
+                            </simpleType>
+                        </attribute>
+                    </complexType>
+                </element>
+                <element name="direccion_empresa">
+                    <complexType>
+                        <sequence>
+                            <element name="tipo_via" type="string"/>
+                            <element name="nombre_via" type="string"/>
+                            <element name="CP" type="string"/>
+                            <element name="pais" type="string"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="empleados">
+                    <complexType>
+                        <sequence>
+                            <element name="empleado" maxOccurs="unbounded">
+                                <complexType>
+                                    <sequence>
+                                        <element name="nombre" type="string"/>
+                                        <element name="apellido" type="string" minOccurs="2" maxOccurs="unbounded"/>
+                                        <element name="DNI" type="string"/>
+                                        <element name="esExtranjero" type="boolean"/>
+                                        <element name="fechaNacimiento" type="date"/>
+                                        <element name="salario">
+                                            <simpleType>
+                                                <restriction base="double">
+                                                    <minInclusive value="900"/>
+                                                    <maxExclusive value="5000"/>
+                                                </restriction>
+                                            </simpleType>
+                                        </element>
+                                        <element name="direccion" maxOccurs="2">
+                                            <complexType>
+                                                <all>
+                                                    <element name="direccion">
+                                                        <simpleType>
+                                                            <restriction base="string">
+                                                                <maxLength value="250"/>
+                                                            </restriction>
+                                                        </simpleType>
+                                                    </element>
+                                                    <element name="pais" type="string"/>
+                                                </all>
+                                            </complexType>
+                                        </element>
+                                        <element name="estaCasado" type="boolean" minOccurs="0"/>
+                                    </sequence>
+                                    <attribute name="DNI" use="required">
+                                        <simpleType>
+                                            <restriction base="string">
+                                                <length value="8"/>
+                                            </restriction>
+                                        </simpleType>
+                                    </attribute>
+                                </complexType>
+                            </element>
+                        </sequence>
+                    </complexType>
+                </element>
+            </sequence>
+            <attribute name="NIF">
+                <simpleType>
+                    <restriction base="string">
+                        <length value="9"/>
+                    </restriction>
+                </simpleType>
+            </attribute>
+            <attribute name="fecha_creacion" use="optional">
+                <simpleType>
+                    <restriction base="string">
+                        <length value="10"/>
+                    </restriction>
+                </simpleType>
+            </attribute>
+            <attribute name="pais">
+                <simpleType>
+                    <restriction base="string">
+                        <enumeration value="espana"/>
+                    </restriction>
+                </simpleType>
+            </attribute>
+        </complexType>
+    </element>
+</schema>

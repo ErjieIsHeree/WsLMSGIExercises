@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE biblioteca SYSTEM "12.3_EjercicioDTDDeXML.dtd"[
+    <!ENTITY tolkien "J.R.R. Tolkien">
+]>
+
+<biblioteca codigo="B_67">
+    <nombre_biblioteca>Biblioteca nacional</nombre_biblioteca>
+    <seccion categoria="Aventura">
+        <libro id="L1">
+            <titulo>El señor de los anillos</titulo>
+            <autor>&tolkien;</autor>
+            <resumen>Un viaje épico para destruir un anillo mágico.</resumen>
+            <editorial>
+                <nombre_editorial>Editorial Fantástica</nombre_editorial>
+                <ciudad>Barcelona</ciudad>
+            </editorial>
+        </libro>
+        <libro id="L2">
+            <titulo>Harry Potter y la piedra filosofal</titulo>
+            <autor>J.K. Rowling</autor>
+            <anio>1997</anio>
+            <resumen>Las aventuras de un joven mago en Hogwarts.</resumen>
+            <editorial>
+                <nombre_editorial>Ediciones Mágicas</nombre_editorial>
+                <ciudad>Londres</ciudad>
+            </editorial>
+        </libro>
+    </seccion>
+    <seccion categoria="Novela" pasillo="P3">
+        <libro id="L3">
+            <titulo>Cien años de soledad</titulo>
+            <autor>Gabriel García Márquez</autor>
+            <anio>1967</anio>
+            <resumen>La historia de la familia Buendía en Macondo.</resumen>
+            <editorial>
+                <nombre_editorial>Ediciones Macondo</nombre_editorial>
+                <ciudad>Bogotá</ciudad>
+            </editorial>
+        </libro>
+    </seccion>
+    <seccion categoria="Ciencia_Ficción">
+        <libro id="L4">
+            <titulo>1984</titulo>
+            <autor>George Orwell</autor>
+            <resumen>Un futuro distópico donde el pensamiento está controlado.</resumen>
+            <editorial>
+                <codigo>ED45TR</codigo>
+                <nombre_editorial>Editorial Distopía</nombre_editorial>
+                <ciudad>Londres</ciudad>
+            </editorial>
+        </libro>
+        <libro id="L5">
+            <titulo>Fundación</titulo>
+            <autor>Isaac Asimov</autor>
+            <anio>1951</anio>
+            <resumen>La historia de la Fundación para prever el futuro galáctico.</resumen>
+            <editorial>
+                <nombre_editorial>Ediciones Galácticas</nombre_editorial>
+                <ciudad>Nueva York</ciudad>
+            </editorial>
+        </libro>
+    </seccion>
+<!-- Puedes agregar más secciones y libros según sea necesario -->
+</biblioteca>

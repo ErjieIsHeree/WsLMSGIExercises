@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE Videojuego SYSTEM "12.2_EjercicioDTDExterno.dtd">
+
+<Videojuego id="vidgam">
+    <Nombre_Juego>League of Legends</Nombre_Juego>
+    <Fecha_Creación>01.01.2024</Fecha_Creación>
+    <Nota>-5</Nota>
+    <Programadores>
+        <Programador id="92381740">
+            <Nombre_Programador>Félix</Nombre_Programador>
+            <Apellidos>Pablo Lobo</Apellidos>
+            <DNI>90483798A</DNI>
+            <Fecha_Nacimiento>
+                <Día>01</Día>
+                <Mes>04</Mes>
+                <Año>2003</Año>
+            </Fecha_Nacimiento>
+            <Dirección_Programador>
+                <Tipo_Vía_Programador>Calle</Tipo_Vía_Programador>
+                <Nombre_Vía_Programador>Félix</Nombre_Vía_Programador>
+                <CP_Programador>32145</CP_Programador>
+                <País_Programador>China</País_Programador>
+            </Dirección_Programador>
+        </Programador>
+        <Programador id="34534525">
+            <Nombre_Programador>Anthony</Nombre_Programador>
+            <Apellidos>Guanga Cristian</Apellidos>
+            <DNI>587345938B</DNI>
+            <Fecha_Nacimiento>
+                <Día>05</Día>
+                <Mes>06</Mes>
+                <Año>2003</Año>
+            </Fecha_Nacimiento>
+            <Dirección_Programador>
+                <Tipo_Vía_Programador>Calle</Tipo_Vía_Programador>
+                <Nombre_Vía_Programador>Anthony</Nombre_Vía_Programador>
+                <CP_Programador>54321</CP_Programador>
+                <País_Programador>Argelia</País_Programador>
+            </Dirección_Programador>
+        </Programador>
+        <Programador id="945872340">
+            <Nombre_Programador>Felipe</Nombre_Programador>
+            <Apellidos>El Fiestas</Apellidos>
+            <DNI>No tiene, sin papeles</DNI>
+            <Fecha_Nacimiento>
+                <Día>08</Día>
+                <Mes>09</Mes>
+                <Año>2003</Año>
+            </Fecha_Nacimiento>
+            <Dirección_Programador>
+                <Tipo_Vía_Programador>Avenida</Tipo_Vía_Programador>
+                <Nombre_Vía_Programador>Felipe</Nombre_Vía_Programador>
+                <CP_Programador>12345</CP_Programador>
+                <País_Programador>Sudán</País_Programador>
+            </Dirección_Programador>
+        </Programador>
+    </Programadores>
+    <Compañía id="49875203">
+        <Nombre_Compañía>Riot</Nombre_Compañía>
+        <NIF>1347528734</NIF>
+        <Dirección_Compañía>
+            <Tipo_Vía_Compañía>Calle</Tipo_Vía_Compañía>
+            <Nombre_Vía_Compañía>Underson</Nombre_Vía_Compañía>
+            <CP_Compañía>36463</CP_Compañía>
+            <País_Compañía>Asmérica</País_Compañía>
+        </Dirección_Compañía>
+    </Compañía>
+    <Página_Asociada>https://www.riotgames.es</Página_Asociada>
+
+</Videojuego>

@@ -1,0 +1,53 @@
+.contadorPares{
+    background-image: url(img/numeros.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+    background-position-x: 40%;
+}
+
+.conversorTemperatura{
+    background-image: url(img/termometro.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 90%;
+}
+
+.adivinaElNumero{
+    background-image: url(img/interrogacion.jpg);
+    background-size: 20%;
+}
+
+.cambiarColorPantalla{
+    background-color: red;
+}
+
+.secFibona{
+    background-image: url(img/fibonacci.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    text-align: center;
+}
+
+hr{
+    margin: 0;
+}
+
+h3{
+    margin: 0%;
+}
+
+div.contenido{
+    display: inline-block;
+    background-color: white;
+}
+
+div.mid{
+    position: relative;
+    text-align: center;
+}
+
+input.big{
+    width: 400px;
+}

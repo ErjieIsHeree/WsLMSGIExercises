@@ -1,0 +1,69 @@
+<!--Videojuego-->
+<!ELEMENT Videojuego (Nombre_Juego,Fecha_Creación,Nota,Programadores,Compañía,Página_Asociada)>
+<!ATTLIST Videojuego id CDATA #REQUIRED>
+
+<!ELEMENT Nombre_Juego (#PCDATA)>
+<!ELEMENT Fecha_Creación (#PCDATA)>
+<!ELEMENT Nota (#PCDATA)>
+
+    <!--Programadores-->
+
+    <!ELEMENT Programadores (Programador+)>
+
+        <!--Programador-->
+
+        <!ELEMENT Programador (Nombre_Programador,Apellidos,DNI,Fecha_Nacimiento,Dirección_Programador)>
+        <!ATTLIST Programador id CDATA #REQUIRED>
+
+        <!ELEMENT Nombre_Programador (#PCDATA)>
+        <!ELEMENT Apellidos (#PCDATA)>
+        <!ELEMENT DNI (#PCDATA)>
+
+            <!--Fecha_Nacimiento-->
+
+            <!ELEMENT Fecha_Nacimiento (Día,Mes,Año)>
+
+            <!ELEMENT Día (#PCDATA)>
+            <!ELEMENT Mes (#PCDATA)>
+            <!ELEMENT Año (#PCDATA)>
+
+            <!--/Fecha_Nacimiento-->
+
+            <!--Dirección_Programador-->
+
+            <!ELEMENT Dirección_Programador (Tipo_Vía_Programador,Nombre_Vía_Programador,CP_Programador,País_Programador)>
+
+            <!ELEMENT Tipo_Vía_Programador (#PCDATA)>
+            <!ELEMENT Nombre_Vía_Programador (#PCDATA)>
+            <!ELEMENT CP_Programador (#PCDATA)>
+            <!ELEMENT País_Programador (#PCDATA)>
+
+            <!--/Dirección_Programador-->
+
+        <!--Programador-->
+
+    <!--/Programadores-->
+
+    <!--Compañía-->
+    <!ELEMENT Compañía (Nombre_Compañía,NIF,Dirección_Compañía)>
+    <!ATTLIST Compañía id CDATA #REQUIRED>
+
+    <!ELEMENT Nombre_Compañía (#PCDATA)>
+    <!ELEMENT NIF (#PCDATA)>
+
+        <!--Dirección_Compañía-->
+
+        <!ELEMENT Dirección_Compañía (Tipo_Vía_Compañía,Nombre_Vía_Compañía,CP_Compañía,País_Compañía)>
+
+        <!ELEMENT Tipo_Vía_Compañía (#PCDATA)>
+        <!ELEMENT Nombre_Vía_Compañía (#PCDATA)>
+        <!ELEMENT CP_Compañía (#PCDATA)>
+        <!ELEMENT País_Compañía (#PCDATA)>
+
+        <!--/Dirección_Compañía-->
+
+    <!--/Compañía-->
+
+<!ELEMENT Página_Asociada (#PCDATA)>
+
+<!--/Videojuego-->

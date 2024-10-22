@@ -1,0 +1,69 @@
+*{
+    outline: 1px solid red;
+}
+
+.posi1{
+    background-color: red;
+    position: static;
+    width: 33%;
+    height: 2em;
+}
+
+.posi2{
+    background-color: yellow;
+    position: absolute;
+    width: 33%;
+    height: 2em;
+    left: 900px;
+}
+
+.posi3{
+    background-color: pink;
+    position: relative;
+    width: 33%; 
+    height: 2em;
+    top: 100px;
+}
+
+.posi4{
+    background-color: purple;
+    position: fixed;
+    width: 10%;
+    height: 10%;
+    top: 100px;
+    left: 90%;
+}
+
+.disp-inli1{
+    display: inline;
+    background-color: red;
+}
+
+.disp-inli2{
+    display: inline;
+    background-color: yellow;
+}
+
+.disp-bloc1{
+    display: block;
+    background-color: aqua;
+}
+
+.disp-bloc2{
+    display: block;
+    background-color: pink;
+}
+
+.disp-inli3{
+    display: inline;
+    width: 30px;
+}
+
+.disp-inbl1{
+    display: inline-block;
+    width: 30px;
+}
+
+.disp-fixe{
+    display: none;
+}

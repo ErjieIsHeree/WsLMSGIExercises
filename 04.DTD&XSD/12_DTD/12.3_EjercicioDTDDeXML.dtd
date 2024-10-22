@@ -1,0 +1,36 @@
+<!ELEMENT biblioteca (nombre_biblioteca,seccion*)>
+<!ATTLIST biblioteca codigo CDATA "B_67">
+
+<!ELEMENT nombre_biblioteca (#PCDATA)>
+
+<!--Seccion-->
+
+<!ELEMENT seccion (libro+)>
+<!ATTLIST seccion
+    categoria (Novela | Ciencia_Ficción | Aventura | Historia) #REQUIRED
+    pasillo CDATA "IMPLIED"
+>
+
+    <!--Libro-->
+
+    <!ELEMENT libro (titulo,autor*,anio?,resumen?,editorial)>
+    <!ATTLIST libro id ID #REQUIRED>
+
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT autor (#PCDATA)>
+    <!ELEMENT anio (#PCDATA)>
+    <!ELEMENT resumen (#PCDATA)>
+
+        <!--Editorial-->
+
+        <!ELEMENT editorial (codigo?,nombre_editorial,ciudad)>
+
+        <!ELEMENT codigo (#PCDATA)>
+        <!ELEMENT nombre_editorial (#PCDATA)>
+        <!ELEMENT ciudad (#PCDATA)>
+
+         <!--Editorial-->
+
+    <!--/Libro-->
+
+<!--/Seccion-->

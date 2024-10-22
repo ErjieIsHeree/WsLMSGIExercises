@@ -1,0 +1,43 @@
+.texWhi{
+    color: white;
+}
+
+.bacGre{
+    background-color: grey;
+}
+
+.texBlu{
+    color: blue;
+}
+
+.bacRed{
+    background-color: red;
+}
+
+header{
+    background-color: black;
+    color: yellow;
+}
+
+footer{
+    background-color: darkblue;
+    color: white;
+}
+
+#hola{
+    color: pink;
+}
+
+#adios{
+    color: purple;
+}
+
+h6.texRig{
+    color: black;
+    text-align: right;
+}
+
+h5, h6 {
+    color: red;
+    text-align: center;
+}

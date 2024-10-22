@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+    <element name="empresa">
+        <complexType>
+            <sequence>
+                <element name="nombre" type="string"/>
+                <element name="NIF" type="string"/>
+                <element name="esEspaniola" type="boolean"/>
+                <element name="capitalSocial">
+                    <complexType>
+                        <choice>
+                            <element name="euros" type="double"/>
+                            <element name="dolares" type="double"/>
+                            <element name="yenes" type="double"/>
+                        </choice>
+                    </complexType>
+                </element>
+                <element name="direccion_empresa">
+                    <complexType>
+                        <sequence>
+                            <element name="tipo_via">
+                                <simpleType>
+                                    <restriction base="string">
+                                        <enumeration value="calle"/>
+                                        <enumeration value="plaza"/>
+                                        <enumeration value="via"/>
+                                        <enumeration value="camino"/>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+                            <element name="nombre_via" type="string"/>
+                            <element name="CP" type="string"/>
+                            <element name="pais" type="string"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="empleados">
+                    <complexType>
+                        <sequence>
+                            <element name="empleado" maxOccurs="unbounded">
+                                <complexType>
+                                    <sequence>
+                                        <element name="nombre" type="string"/>
+                                        <element name="apellido" type="string" minOccurs="2" maxOccurs="unbounded"/>
+                                        <element name="DNI" type="string"/>
+                                        <element name="esExtranjero" type="boolean"/>
+                                        <element name="fechaNacimiento" type="date"/>
+                                        <element name="salario" type="double"/>
+                                        <element name="direccion" maxOccurs="2">
+                                            <complexType>
+                                                <all>
+                                                    <element name="direccion" type="string"/>
+                                                    <element name="pais" type="string"/>
+                                                </all>
+                                            </complexType>
+                                        </element>
+                                        <element name="estaCasado" type="boolean" minOccurs="0"/>
+                                    </sequence>
+                                </complexType>
+                            </element>
+                        </sequence>
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>6_Ejercicio Formulario De Pizzer&iacute;a</title>
+    </head>
+    <body>
+        <header style="text-align: center;">
+            <h1>Bienvenidos a pizzer&iacute;a Erjie</h1>
+        </header>
+    </body>
+    <hr/>
+    <main>
+        <form action="" method="post">
+            <!--Si aplico la etiqueta "get" y envío el formulario, se reinicia la ventana
+            y cambia el enlace con toda la información del formulario enviado con el formato
+            "(name)=(value)&". Si uso post, hace lo mismo, pero ocultando la información del
+            formulario-->
+            <legend><h1>Registro</h1></legend>
+            <label for="ibajoq">Nombre completo</label>
+            <input type="text" name="ibajoq" required/>
+            <br/>
+            <label for="ijewir">Contrase&ntilde;a</label>
+            <input type="password" name="ijewir"/>
+            <br/>
+            <label for="umizoj">Direcci&oacute;n de entrega</label>
+            <input type="text" name="umizoj" required/>
+            <br/>
+            <label for="ijijuv">N&uacute;mero de tel&eacute;fono</label>
+            <input type="tel" name="ijijuv" required/>
+            <br/>
+            <label for="ihoxek">Correo electr&oacute;nico</label>
+            <input type="email" name="ihoxek"/>
+            <br/>
+            <label for="agekup">Edad</label>
+            <input type="number" name="agekup" min="18"/>
+            <br/>
+
+            <h1>Pedido a domicilio</h1>
+            <label for="otoqin"><h3>Tama&ntilde;o</h3></label>
+            <input type="radio" name="otoqin" value="S"/>Peque&ntilde;a (8 pulgadas)<br/>
+            <input type="radio" name="otoqin" value="M"/>Mediana (12 pulgadas)<br/>
+            <input type="radio" name="otoqin" value="L"/>Grande (16 pulgadas)<br/>
+            <br/>
+            <label for="unajof"><h3>Tipo de masa</h3></label>
+            <input type="radio" name="unajof" value="F"/>Masa fina<br/>
+            <input type="radio" name="unajof" value="N"/>Masa normal<br/>
+            <input type="radio" name="unajof" value="G"/>Masa gruesa<br/>
+            <br/>
+            <label for="ibudat"><h3>Ingredientes</h3></labeL>
+            <input type="checkbox" name="ibudat" value="1"/>Pepperoni<br/>
+            <input type="checkbox" name="ibudat" value="2"/>Judías verdes<br/>
+            <input type="checkbox" name="ibudat" value="3"/>Jam&oacute;n<br/>
+            <input type="checkbox" name="ibudat" value="4"/>Alcaparras<br/>
+            <input type="checkbox" name="ibudat" value="5"/>Aceitunas<br/>
+            <input type="checkbox" name="ibudat" value="6"/>Cebolla<br/>
+            <input type="checkbox" name="ibudat" value="7"/>Salchicha<br/>
+            <input type="checkbox" name="ibudat" value="8"/>Pi&ntilde;a<br/>
+            <br/>
+            <label for="awepec"><h3>Salsa</h3></label>
+            <input type="radio" name="awepec" value="01"/>Tomate<br/>
+            <input type="radio" name="awepec" value="02"/>Barbacoa<br/>
+            <input type="radio" name="awepec" value="03"/>Pesto<br/>
+            <input type="radio" name="awepec" value="00"/>Sin salsa<br/>
+
+            <h1>Instrucciones especiales</h1>
+            <textarea style="resize: none;" rows="5" cols="80" name="Otros"></textarea>
+
+            <label for="ojaran" required><h1>M&eacute;todo de pago</h1></label>
+            <input type="radio" name="ojaran" value="efectivo"/>Efectivo<br/>
+            <input type="radio" name="ojaran" value="tarjeta"/>Tarjeta de cr&eacute;dito<br/>
+            <input type="radio" name="ojaran" value="PayPal"/>PayPal<br/>
+
+            <br/>
+            <br/>
+            <label for="etates">Lea los <a href="6.2CondicionesDeServicio.html">condiciones de servicio</a> para continuar.</label><br/>
+            <input type="checkbox" name="etates" value="TérminosAceptado" required>He le&iacute;do y acepto los condiciones de servicio<br/>
+
+            <br/>	
+            <input type="submit" value="Enviar"/>
+            <input type="reset" value="Volver a rellenar"/>
+        </form>
+    </main>
+</html>

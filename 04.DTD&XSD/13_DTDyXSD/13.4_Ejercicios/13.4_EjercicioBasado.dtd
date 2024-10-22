@@ -1,0 +1,34 @@
+    <!ELEMENT empresa (nombre,NIF,esEsp,capitalSocial,direccion,empleados+)>
+
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT NIF (#PCDATA)>
+    <!ELEMENT esEspaniola (#PCDATA)>
+    <!ELEMENT capitalSocial (euros | dolares | yenes)>
+
+        <!ELEMENT euros (#PCDATA)>
+        <!ELEMENT dolares (#PCDATA)>
+        <!ELEMENT yenes (#PCDATA)>
+
+    <!ELEMENT direccion (tipo_via,nombre_via,CP,pais)>
+
+        <!ELEMENT yenes (#PCDATA)>
+        <!ELEMENT nombre_via (#PCDATA)>
+        <!ELEMENT CP (#PCDATA)>
+        <!ELEMENT pais (#PCDATA)>
+
+    <!ELEMENT empleados (empleado+)>
+
+        <!ELEMENT empleado (nombre,apellido+,DNI,esExtranjero,fechaNacimiento,salario,direccion+,estaCasado?)>
+
+            <!ELEMENT nombre (#PCDATA)>
+            <!ELEMENT apellido (#PCDATA)>
+            <!ELEMENT DNI (#PCDATA)>
+            <!ELEMENT esExtranjero (#PCDATA)>
+            <!ELEMENT fechaNacimiento (#PCDATA)>
+            <!ELEMENT salario (#PCDATA)>
+            <!ELEMENT direccion (direccion_calle,pais)>
+
+                <!ELEMENT direccion_calle (#PCDATA)>
+                <!ELEMENT pais (#PCDATA)>
+
+            <!ELEMENT estaCasado (#PCDATA)>

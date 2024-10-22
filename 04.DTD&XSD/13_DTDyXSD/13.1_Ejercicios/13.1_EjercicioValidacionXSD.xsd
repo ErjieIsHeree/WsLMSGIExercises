@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+    <element name="biblioteca">
+        <complexType>
+            <sequence>
+                <element name="nombre" type="string"/>
+                <element name="seccion" maxOccurs="unbounded">
+                    <complexType>
+                        <sequence>
+                            <element name="libro" minOccurs="0" maxOccurs="unbounded">
+                                <complexType>
+                                    <sequence>
+                                        <element name="titulo" type="string"/>
+                                        <element name="autor" type="string"/>
+                                        <element name="anio" type="integer" minOccurs="0"/>
+                                        <element name="resumen" type="string"/>
+                                        <element name="editorial">
+                                            <complexType>
+                                                <sequence>
+                                                    <element name="codigo" type="string" minOccurs="0"/>
+                                                    <element name="nombre" type="string"/>
+                                                    <element name="ciudad" type="string"/>
+                                                </sequence>
+                                            </complexType>
+                                        </element>
+                                    </sequence>
+                                </complexType>
+                            </element>
+                        </sequence>
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>
